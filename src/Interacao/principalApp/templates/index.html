@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Example DataTables Card-->
+<div class="card mb-3" >
+    
+    <div class="card-header" >
+        <!-- Veiculo -->
+        <div class="btn-group text-light">
+            <button type="button" class="text-light btn dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="background-color:#457B9D;">
+                Veículo
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Cadastrar Cavalo</a>
+                <a class="dropdown-item" href="#">Cadastrar Carreta</a>
+            </div>
+        </div>
+
+        <!-- Pessoa -->
+        <div class="btn-group text-light">
+            <button type="button" class="text-light btn dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="background-color:#457B9D;">
+                Pessoa
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Cadastrar Responsavel</a>
+                <a class="dropdown-item" href="#">Cadastrar Freteiro</a>
+                <a class="dropdown-item" href="#">Cadastrar Cliente</a>
+            </div>
+        </div>
+        <!-- Operação -->
+        <div class="btn-group text-light">
+            <button type="button" class="text-light btn dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="background-color:#457B9D;">
+                Operação
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Gerar Operação</a>
+                <a class="dropdown-item" href="#">Historico de Operação</a>
+            </div>
+        </div>
+
+        <!-- Importação -->
+        <div class="btn-group text-light">
+            <button type="button" class="text-light btn dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="background-color:#457B9D;">
+                Importação
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Gerar Operação</a>
+                <a class="dropdown-item" href="#">Historico de Operação</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Ação</th>
+                        <th>Cavalo</th>
+                        <th>Carreta01</th>
+                        <th>Carreta02</th>
+                        <th>Motorista</th>
+                        <th>Cliente</th>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Localização</th>
+                        <th>Saída</th>
+                        <th>Chegada</th>
+                        <th>Responsavel</th>
+                        <th>Status</th>
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Ação</th>
+                        <th>Cavalo</th>
+                        <th>Carreta01</th>
+                        <th>Carreta02</th>
+                        <th>Motorista</th>
+                        <th>Cliente</th>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Localização</th>
+                        <th>Saída</th>
+                        <th>Chegada</th>
+                        <th>Responsavel</th>
+                        <th>Status</th>
+                    
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>
+                            <!-- Pessoa -->
+                            <div class="btn-group text-light">
+                                <button type="button" class="text-light btn dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" style="background-color:#2C5288;">
+                                    Ação
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Cadastrar Responsavel</a>
+                                    <a class="dropdown-item" href="#">Cadastrar Freteiro</a>
+                                    <a class="dropdown-item" href="#">Cadastrar Cliente</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe src=https://www.autotrac-online.com.br/supervisor/Pages/login.aspxstyle=border:0px #ffffff none; name=web_host_pythonscrolling=no 
+                frameborder=1 marginheight=0px marginwidth=0px height=100% width=100% allowfullscreen>
+                
+                </iframe>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" >Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
